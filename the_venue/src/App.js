@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './resources/style.css';
+import './resources/styles.css';
+import Header from "./components/header_footer/header";
 
 
 class App extends Component {
