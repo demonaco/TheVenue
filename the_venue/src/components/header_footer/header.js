@@ -18,8 +18,10 @@ class Header extends Component {
         window.addEventListener('scroll', this.handleScroll);
     }
 
+
+    
     handleScroll = () => {
-        if (window.scroll > 0) {
+        if (window.scrollY > 0) {
             this.setState({
                 headerShow: true
             })
@@ -42,7 +44,7 @@ class Header extends Component {
            <AppBar
             position="fixed" 
             style={{
-                backgroundColor: this.state.headerShow ? '#2f2f2f' : 'transparent'
+                backgroundColor: this.state.headerShow ? '#2f2f2f' : 'transparent',
                 boxShadow: "none",
                 padding: "10px 0px"
             }}
