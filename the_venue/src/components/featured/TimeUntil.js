@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Slide from 'react-reveal/Slide';
 
 class TimeUntil extends Component {
     state = {
@@ -7,6 +8,7 @@ class TimeUntil extends Component {
     }
     render() {
         return (
+            <Slide left delay={1000}>
             <div className="countdown_wrapper">
                 <div className="countdown_top">
                     Event starts in
@@ -19,30 +21,34 @@ class TimeUntil extends Component {
                         <div className="countdown_tag">
                             Days
                             </div>
-                            <div className="countdown_item">
-                        <div className="countdown_time">
-                            2
+                        <div className="countdown_item">
+                            <div className="countdown_time">
+                                2
                         </div>
-                        <div className="countdown_tag">
-                            hs
+                            <div className="countdown_tag">
+                                hs
                             </div>
                             <div className="countdown_item">
-                        <div className="countdown_time">
-                            20
+                                <div className="countdown_time">
+                                    20
                         </div>
-                        <div className="countdown_tag">
-                            Min
+                                <div className="countdown_tag">
+                                    Min
                             </div>
-                            <div className="countdown_item">
-                        <div className="countdown_time">
-                            40
+                                <div className="countdown_item">
+                                    <div className="countdown_time">
+                                        40
                         </div>
-                        <div className="countdown_tag">
-                            Sec
+                                    <div className="countdown_tag">
+                                        Sec
                             </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            </Slide>
         );
     }
 }
