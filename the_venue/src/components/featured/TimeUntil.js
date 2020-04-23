@@ -12,14 +12,13 @@ class TimeUntil extends Component {
 
 getTimeUntil(deadline) {
     const time = Date.parse(deadline) - Date.parse(new Date());
-
    if(time < 0) {
        console.log('date passed')
    } else {
     const seconds = Math.floor((time/1000)%60);
     const minutes = Math.floor((time/1000/60)%60);
     const hours = Math.floor((time/(1000*60*60))%24);
-    const days = Math.floor((time/(1000*60*60*24)));
+    const days = Math.floor(time/(1000*60*60*24));
 
     
     this.setState({
@@ -34,7 +33,7 @@ getTimeUntil(deadline) {
 }
 
 componentDidMount() { 
-    setInterval(()=> this.getTimeUntil(), 1000)
+    setInterval(()=> this.getTimeUntil(this.state.deadline), 1000)
 }
 
     render() {
@@ -57,7 +56,7 @@ componentDidMount() {
                                 {this.state.hours}
                         </div>
                             <div className="countdown_tag">
-                                hs
+                                hrs
                             </div>
                             <div className="countdown_item">
                                 <div className="countdown_time">
