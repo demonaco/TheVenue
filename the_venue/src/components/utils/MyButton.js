@@ -4,7 +4,15 @@ import TicketIcon from '../../resources/images/icons/ticket.png'
 
 const MyButton = () => {
     return (
-        <Button>
+        <Button
+        href="http://google.com"
+        variant="contained"
+        size="small"
+        style={{
+            background: 'red',
+            color: 'white'
+        }}
+        >
             <img src={TicketIcon}
             className="iconImage"
             alt="icon_button"/>
