@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
-import { render } from '@testing-library/react';
+
 
 
 
@@ -15,7 +15,7 @@ class Discount extends Component {
     percentage = () => {
         if(this.state.discountStart < this.state.discountEnd){
             this.setState({
-                discount: this.state.discountStart + 1
+                discountStart: this.state.discountStart + 1
             })
         }
     }
@@ -23,7 +23,7 @@ class Discount extends Component {
     componentDidUpdate() {
         setTimeout(()=> {
             this.percentage()
-        }, 30)
+        },30)
     }
 
     render() {
@@ -31,7 +31,7 @@ class Discount extends Component {
         <div className="center_wrapper">
             <div className="discount_wrapper">
                 <Fade
-                onReveal={()=> this.percentage}
+                onReveal={()=> this.percentage()}
                 >
                 <div className="discount_percentage">
                     <span>{this.state.discountStart}%</span>
@@ -39,7 +39,7 @@ class Discount extends Component {
                 </div>
                 </Fade>
 
-                    <Slide>
+                    <Slide right>
                     <div className="discount_description">
                         <h3>Purchase tickets before December 25th</h3>
                         <p>This is some filler text here</p>
