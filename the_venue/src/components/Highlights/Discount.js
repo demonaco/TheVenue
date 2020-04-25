@@ -45,8 +45,14 @@ class Discount extends Component {
                         <h3>Purchase tickets before December 25th</h3>
                         <p>This is some filler text here</p>
 
-                       <MyButton/>
-                       
+                       <MyButton
+                       text="Purchase tickets"
+                       bck="#ffa800"
+                       color="#ffffff"
+                       link="http://google.com"
+
+                       />
+
                     </div>
                     </Slide>
                 </div>
