@@ -13,9 +13,11 @@ const MyButton = (props) => {
             color: props.color
         }}
         >
-            <img src={TicketIcon}
+            <img 
+            src={TicketIcon}
             className="iconImage"
-            alt="icon_button"/>
+            alt="icon_button"
+            />
                 {props.text}
         </Button>
     );
