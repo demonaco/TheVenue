@@ -34,10 +34,10 @@ class App extends Component {
 
       <Element name="location">
       <Location/>
-      </Element>
+      </Element> 
 
 
-      <Footer/>
+      {/* <Footer/> */}
      </div>
   );
 }

@@ -8,9 +8,9 @@ class Pricing extends Component {
         prices: [100, 150, 250],
         positions: ["Balcony", "Medium", "Star"],
         desc: [
-            "hi this is all temporary text blah blah blah blah",
-            "hi this is more text baskdasjda",
-            "even more text fahsdasjdnasjdnas"
+            "It's the cheap seats folks.. bring your binoculars!",
+            "Right in the middle of the action. This section has the best acoustics.",
+            "Be right front in center of Ariana!"
         ],
         linkto: ["/", "/", "/"],
         delay: [500, 0, 500]

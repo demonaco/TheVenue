@@ -43,7 +43,7 @@ class Discount extends Component {
                     <Slide right>
                     <div className="discount_description">
                         <h3>Purchase tickets before December 25th</h3>
-                        <p>This is some filler text here</p>
+                        <p>Make sure to grab your tickets before they're gone. We cannot hold tickets for you. Must present ID at show. Refunds will not be given if you cannot make the show.</p>
 
                        <MyButton
                        text="Purchase tickets"
